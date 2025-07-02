@@ -19,9 +19,9 @@ public class TreeSetRev {
         ts.add(15);
         ts.add(31);
         System.out.println(ts);
-        System.out.println(ts.subSet(1,20));
-        System.out.println(ts.headSet(13));
-        System.out.println(ts.tailSet(13));
+        System.out.println(ts.subSet(1,20)); // returns all elements between the passed values
+        System.out.println(ts.headSet(13)); //returns all elements below to the passed element
+        System.out.println(ts.tailSet(13)); // returns all elements from passed element
         System.out.println(ts.lower(30)); //returns greatest ele below/less than 30
         System.out.println(ts.higher(30)); //returns lower ele above/greater than 30
 

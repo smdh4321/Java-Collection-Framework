@@ -1,0 +1,57 @@
+Map Interface
+
+->Map is not part of collection interface but it part of collection framework.
+
+->Map is a data structure in java that stores key-value pairs.
+
+->Key is the identifier of the value hence it allows unique key and value can be duplicate.
+
+-------------------------------------------------------------------------------------------------------------------
+
+Interface & Classes                      Description
+
+HashMap                                  Stores key-value pairs using hash table implementation.
+
+LinkedHashMap                            Maintains insertion order of elements.
+
+SortedMap                                Maintains the keys in sorted order.
+
+NavigableMap                             Provides navigation methods for accessing map entries.
+
+TreeMap                                  Implements a Red-Black tree for keys ordering.
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+🔹 Basic Methods
+Method	                             Description
+
+V put(K key, V value)	            Associates the specified value with the specified key.
+
+V get(Object key)	                Returns the value to which the specified key is mapped.
+
+V remove(Object key)	            Removes the mapping for the specified key if present.
+
+boolean containsKey(Object key)	    Returns true if the map contains a mapping for the specified key.
+
+boolean containsValue(Object value)
+ true if the map maps one or more keys to the specified value.
+
+void clear()	                    Removes all of the mappings from the map.
+
+int size()	                        Returns the number of key-value mappings.
+
+boolean isEmpty()	                Returns true if the map contains no key-value mappings.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+🔹 View Methods
+Method	                            Description
+
+Set<K> keySet()	                    Returns a Set view of the keys.
+
+Collection<V> values()	            Returns a Collection view of the values.
+
+Set<Map.Entry<K, V>> entrySet()	    Returns a Set view of the key-value pairs (Map.Entry).

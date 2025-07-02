@@ -1,0 +1,57 @@
+The List interface in the Java Collection Framework is an ordered collection (also known as a sequence)
+that allows duplicate elements and provides positional access.
+
+It is implemented by classes like ArrayList, LinkedList, and Vector.
+-----------------------------------------------------------------------------------------------------------------------
+
+
+🔹 Basic Methods of List Interface
+Method	                                                Description
+
+void add(int index, E element)	                        Inserts the element at the specified position.
+
+boolean add(E e)	                                    Appends the element to the end of the list.
+
+boolean addAll(Collection<? extends E> c)               Appends all elements in the given collection.
+
+boolean addAll(int index, Collection<? extends E> c)	Inserts all elements starting at the given index.
+
+E get(int index)	                                    Returns the element at the specified index.
+
+E set(int index, E element)	                            Replaces the element at the specified index.
+
+E remove(int index)                             	    Removes the element at the specified index.
+
+boolean remove(Object o)	                            Removes the first occurrence of the specified element.
+
+int indexOf(Object o)	                                Returns the index of the first occurrence.
+
+int lastIndexOf(Object o)	                            Returns the index of the last occurrence.
+
+boolean contains(Object o)	                            Checks if the list contains the specified element.
+
+int size()	                                            Returns the number of elements.
+
+boolean isEmpty()	                                    Checks if the list is empty.
+
+void clear()	                                        Removes all elements from the list.
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+🔹 Iteration & View Methods
+Method	                                        Description
+
+Iterator<E> iterator()	                        Returns an iterator over the elements.
+
+ListIterator<E> listIterator()	                Returns a list iterator (bidirectional).
+
+ListIterator<E> listIterator(int index)	        Returns a list iterator starting at specified index.
+
+List<E> subList(int fromIndex, int toIndex)	    Returns a view of the portion of the list.
+
+Object[] toArray()	                            Returns an array of all elements.
+
+<T> T[] toArray(T[] a)	                        Returns an array of specified type.
+

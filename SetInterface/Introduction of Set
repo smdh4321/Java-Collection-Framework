@@ -1,0 +1,43 @@
+ChatGPT said:
+The Set interface in Java is a part of the Java Collections Framework and represents a collection
+that does not allow duplicate elements.
+
+🔹 Common Implementations:
+HashSet – No order
+
+LinkedHashSet – Maintains insertion order
+
+TreeSet – Maintains sorted (natural or custom) order
+
+---------------------------------------------------------------------------------------------------------------------------
+
+🔹 Core Methods of Set Interface
+Since Set extends the Collection interface, it inherits all methods from Collection but enforces uniqueness of elements.
+
+Method	                                              Description
+
+boolean add(E e)	                                  Adds the element if it is not already present.
+
+boolean addAll(Collection<? extends E> c)	          Adds all elements, ignoring duplicates.
+
+boolean remove(Object o)	                          Removes the specified element if present.
+
+boolean removeAll(Collection<?> c)	                  Removes all elements that exist in the specified collection.
+
+boolean retainAll(Collection<?> c)	                  Retains only the elements that exist in the specified collection.
+
+boolean contains(Object o)	                          Returns true if the set contains the specified element.
+
+boolean containsAll(Collection<?> c)	              Returns true if the set contains all elements of the specified collection.
+
+void clear()	                                      Removes all elements from the set.
+
+int size()	                                          Returns the number of elements in the set.
+
+boolean isEmpty()	                                  Returns true if the set is empty.
+
+Iterator<E> iterator()	                              Returns an iterator over the elements in the set.
+
+Object[] toArray()	                                  Returns an array containing all elements.
+
+<T> T[] toArray(T[] a)	                              Returns an array containing all elements in the specified type.

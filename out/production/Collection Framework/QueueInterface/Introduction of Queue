@@ -1,0 +1,43 @@
+ChatGPT said:
+The Queue interface in Java (part of the Java Collections Framework) is designed for holding elements prior to processing.
+It typically follows FIFO (First-In-First-Out) order, though other orders (like priority) are possible depending on implementation.
+
+It is extended by subinterfaces like:
+
+Deque (for double-ended queue)
+
+Implemented by classes like LinkedList, PriorityQueue, ArrayDeque
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+🔹 Core Methods of Queue Interface
+Method	                             Description
+
+boolean add(E e)	                 Inserts the specified element. Throws an exception if the queue is full (in bounded queues).
+
+boolean offer(E e)	                 Inserts the specified element. Returns false if the queue is full.
+
+E remove()	                         Retrieves and removes the head of the queue. Throws NoSuchElementException if the queue is empty.
+
+E poll()	                         Retrieves and removes the head of the queue, or returns null if the queue is empty.
+
+E element()	                         Retrieves, but does not remove, the head of the queue. Throws exception if empty.
+
+E peek()	                         Retrieves, but does not remove, the head of the queue, or returns null if the queue is empty.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+🔹 Difference Between Key Methods
+Method	                      Behavior When Queue is Empty or Full
+
+add()	                      Throws exception if full
+
+offer()	                      Returns false if full
+
+remove()	                  Throws exception if empty
+
+poll()	                      Returns null if empty
+
+element()	                  Throws exception if empty
+
+peek()	                      Returns null if empty
