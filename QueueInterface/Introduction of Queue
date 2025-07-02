@@ -1,4 +1,3 @@
-ChatGPT said:
 The Queue interface in Java (part of the Java Collections Framework) is designed for holding elements prior to processing.
 It typically follows FIFO (First-In-First-Out) order, though other orders (like priority) are possible depending on implementation.
 
